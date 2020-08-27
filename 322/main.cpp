@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-class Solution {
+/*class Solution {
 public:
     vector<string> findItinerary(vector<vector<string>>& tickets) {
         vector<int> visited(tickets.size(), -1);
@@ -84,8 +84,24 @@ public:
         std::reverse(min_path.begin(), min_path.end());
         return min_path;
     }
-};
+};*/
+void test1(){
+    double a[]={0,2,4};
+    cout << &a << ' ' << &a[0];
+}
+void test2(double a[]){
+    cout <<endl << &a << ' ' << &a[0];
+}
 int main() {
     std::cout << "Hello, World!" << std::endl;
+    double a[]={0,2,4};
+    //test1();
+    //test2(a);
+    int num = 0;
+    cout << &num << endl;
+    int *p=&num;
+    cout << ' ' << p << ' ' << *p;
+    cout << endl;
+    cout << *&p;
     return 0;
 }
