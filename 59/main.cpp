@@ -56,7 +56,7 @@ public:
         vector<vector<int>> res(n, vector<int>(n,0));
         while(count<=n*n){
             res[x][y]=count++;
-            switch(direction%4){
+            switch(direction%4){                    //记得判断下标是不是越界，越界的话必然更换方向
                 case 0: if(y+1>n-1||res[x][y+1]!=0) direction++;break;
                 case 1: if(x+1>n-1||res[x+1][y]!=0) direction++;break;
                 case 2: if(y-1<0||res[x][y-1]!=0) direction++;break;
