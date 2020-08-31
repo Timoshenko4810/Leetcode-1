@@ -24,6 +24,7 @@ int main() {
         ++pre;
     while(post>pre&&arr[post].birthday>"2014/09/06")
         --post;
-    cout << post-pre+1 << ' ' << arr[pre].name << ' ' <<  arr[post].name;
+    cout << post-pre+1;
+    if(post-pre+1>=1) cout << ' ' << arr[pre].name << ' ' <<  arr[post].name;
     return 0;
 }
