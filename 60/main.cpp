@@ -1,16 +1,3 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <queue>
-using namespace std;
-
-struct TreeNode {
-    int val;
-	TreeNode *left;
-    TreeNode *right;
-    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-};
-
 class Solution {
 public:
 	string getPermutation(int n, int k) {
@@ -52,10 +39,3 @@ public:
 		return n%k;
 	}
 };
-
-int main() {
-    std::cout << "Hello, World!" << std::endl;
-	Solution a;
-	cout<<a.getPermutation(3, 2)<<endl;
-    return 0;
-}
